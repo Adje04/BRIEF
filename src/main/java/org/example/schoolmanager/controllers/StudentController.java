@@ -6,9 +6,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+import org.example.schoolmanager.HelloApplication;
 import org.example.schoolmanager.models.Student;
 
+import java.io.IOException;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -34,6 +38,7 @@ public class StudentController {
 
     @FXML
     private TextField studentClassTextField;
+
 
     @FXML
     void submitStudent() throws SQLException, ParseException {
